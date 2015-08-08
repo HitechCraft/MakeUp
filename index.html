@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Title</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" href="less/bootstrap.css"/>
 	<link rel="stylesheet/less" type="text/css" href="less/variables.less"/>
 	<link rel="stylesheet/less" type="text/css" href="less/bootswatch.less"/>
@@ -30,7 +31,7 @@
   </div>
 </nav>
 <div class="main-content">
-    <div class="col-md-4">
+    <div class="left-column">
         <div class="block">
             <div class="block-body">
                 <span class="block-label">Регион</span>
@@ -88,26 +89,16 @@
                     </label>
                 </div>
                 <div class="btn-group">
-                    <a class="btn btn-primary dropdown-toggle btn-select2" data-toggle="dropdown" href="#">01.04.2015  <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">01.04.2015</a></li>
-                        <li><a href="#">02.04.2015</a></li>
-                        <li><a href="#">03.04.2015</a></li>
-                    </ul>
+                    <a class="btn btn-primary dropdown-toggle btn-select2" data-toggle="dropdown" href="#"><input class="selecter" id="datestart" name="start-date" type="text" value="Начальная дата" /></a>
                 </div>
                 <div class="btn-group">
-                    <a class="btn btn-primary dropdown-toggle btn-select2" data-toggle="dropdown" href="#">04.06.2015  <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">02.06.2015</a></li>
-                        <li><a href="#">03.06.2015</a></li>
-                        <li><a href="#">04.06.2015</a></li>
-                    </ul>
+                    <a class="btn btn-primary dropdown-toggle btn-select2" data-toggle="dropdown" href="#"><input class="selecter" id="dateend" name="end-date" type="text" value="Конечная дата" /></a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="col-md-8">
+    <div class="right-column">
         <div class="tabbable">
             <ul class="nav nav-tabs">
                 <li class="active"><a href="#tab1" data-toggle="tab">Таблица</a></li>
@@ -192,9 +183,16 @@
     </div>
 </footer>
 <script src="js/less.js" type="text/javascript"></script>
-<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="js/bootswatch.js" type="text/javascript"></script>
 <script src="js/bootstrap.js" type="text/javascript"></script>
+<script>
+    $(function () {
+        $("#datestart").datepicker();
+        $("#dateend").datepicker();
+    });
+</script>
 <body> 
 </body>
 </html>

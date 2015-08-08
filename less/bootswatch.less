@@ -17,11 +17,23 @@ html, body {
 }
 
 .main-content {
-    max-width: @content-width;
+    width: @content-width;
     min-height: @body-height;
     margin: 0 auto;
     margin-top: 50px;
 }
+
+.left-column{
+    width: @left-column-width;
+    float: left;
+    margin-left: 40px;
+}
+
+.right-column{
+    margin-left: @right-column-margin-left;
+    margin-right: @right-column-margin-right;
+}
+
 
 .navbar {
   border-width: 0;
@@ -442,9 +454,18 @@ a.list-group-item {
   color: @text-color;
 }
 
+.selecter{
+    background-color: transparent;
+    border: 0;
+    width: @selecter-width;
+}
+
 .tabbable{
 
     margin-top: @tabbable-margin-top;
+    float: left;
+    min-width: @tabbable-min-width;
+    width: @tabbable-width;
 
     .nav-tabs, nav{
 
