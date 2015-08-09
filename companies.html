@@ -1,0 +1,383 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="less/bootstrap.css" />
+    <link rel="stylesheet/less" type="text/css" href="less/variables.less" />
+    <link rel="stylesheet/less" type="text/css" href="less/bootswatch.less" />
+</head>
+<nav class="navbar navbar-default">
+    <div class="container-fluid navbar-content">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Logo</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav"></ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active">
+                    <a href="#page1" data-toggle="tab">Пользователи</a>
+                </li>
+                <li>
+                    <a href="#page2" data-toggle="tab">Предприятия</a>
+                </li>
+                <li>
+                    <a href="#page3" data-toggle="tab">Словари</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="main-content">
+    <div class="tab-content">
+        <div class="tab-pane active" id="page1">
+            <div class="left-column">
+                <div class="block">
+                    <div class="block-body">
+                        <div class="block-header">
+                            Пользователи
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="inputDefault">Логин</label>
+                            <input type="text" name="login" class="form-control" id="inputDefault">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="inputDefault">Ф.И.О</label>
+                            <input type="text" name="name" class="form-control" id="inputDefault">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="inputDefault">Должность</label>
+                            <div class="btn-group">
+                                <a class="btn btn-primary dropdown-toggle btn-select2" data-toggle="dropdown" href="#">Выбрать  <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Должность 1</a></li>
+                                    <li><a href="#">Должность 2</a></li>
+                                    <li><a href="#">Должность 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="inputDefault">E-mail</label>
+                            <input type="text" name="email" class="form-control" id="inputDefault">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="inputDefault">Предприятие</label>
+                            <div class="btn-group">
+                                <a class="btn btn-primary dropdown-toggle btn-select2" data-toggle="dropdown" href="#">Выбрать  <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Предприятие 1</a></li>
+                                    <li><a href="#">Предприятие 2</a></li>
+                                    <li><a href="#">Предприятие 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                                <a href="#" class="btn btn-success">Сохранить</a>
+                                <a href="#" class="btn btn-primary">Вернуть</a>
+                                <a href="#" class="btn btn-danger">Удалить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="content">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Логин</th>
+                                <th>Ф.И.О.</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Login1</td>
+                                <td>FIO1</td>
+                                <td>Email1</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Login2</td>
+                                <td>FIO2</td>
+                                <td>Email2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="page2">
+            <div class="left-column">
+                <div class="block">
+                    <div class="block-body">
+                        <div class="block-header">
+                            Предприятия
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="inputDefault">ID</label>
+                            <input type="text" name="id" class="form-control" id="inputDefault">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="inputDefault">Предприятие</label>
+                            <input type="text" name="login" class="form-control" id="inputDefault">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="inputDefault">Регион</label>
+                            <div class="btn-group">
+                                <a class="btn btn-primary dropdown-toggle btn-select2" data-toggle="dropdown" href="#">Выбрать  <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Московская обл.</a></li>
+                                    <li><a href="#">Ленинградская обл.</a></li>
+                                    <li><a href="#">Омская обл.</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="inputDefault">Адрес</label>
+                            <input type="text" name="name" class="form-control" id="inputDefault">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="inputDefault">Дополнительно</label>
+                            <textarea name="info" class="form-control info" id="inputDefault">
+                                </textarea>
+                        </div>
+                        <div class="form-group">
+                            <a href="#" class="btn btn-success">Сохранить</a>
+                            <a href="#" class="btn btn-primary">Вернуть</a>
+                            <a href="#" class="btn btn-danger">Удалить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="content">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Регион</th>
+                                <th>Предприятие</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Region1</td>
+                                <td>Factory1</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Region2</td>
+                                <td>Factory2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="page3">
+            <div class="right-column dictionary">
+                <div class="tabbable">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab1" data-toggle="tab">Области</a></li>
+                        <li><a href="#tab2" data-toggle="tab">Размерности</a></li>
+                        <li><a href="#tab3" data-toggle="tab">Параметры</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab1">
+                            <p>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th width="20%">Код региона</th>
+                                            <th>Регион</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>43</td>
+                                            <td>Кировская обл.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>77</td>
+                                            <td>Московская обл.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                            <p>
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Области</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="form-group">
+                                            <label class="control-label" for="inputDefault">Код региона</label>
+                                            <input type="text" name="region-number" class="form-control" id="inputDefault">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label" for="inputDefault">Регион</label>
+                                            <input type="text" name="region-name" class="form-control" id="inputDefault">
+                                        </div>
+                                        <div class="form-group">
+                                            <a href="#" class="btn btn-success">Сохранить</a>
+                                            <a href="#" class="btn btn-primary">Вернуть</a>
+                                            <a href="#" class="btn btn-primary">Новый</a>
+                                            <a href="#" class="btn btn-danger">Удалить</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="tab-pane" id="tab2">
+                            <p>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th width="20%">Код размерности</th>
+                                            <th>Размерность</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>text</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>text</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                            <p>
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Размерности</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="form-group">
+                                            <label class="control-label" for="inputDefault">Код размерности</label>
+                                            <input type="text" name="dict-number" class="form-control" id="inputDefault">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label" for="inputDefault">Размерность</label>
+                                            <input type="text" name="dict-name" class="form-control" id="inputDefault">
+                                        </div>
+                                        <div class="form-group">
+                                            <a href="#" class="btn btn-success">Сохранить</a>
+                                            <a href="#" class="btn btn-primary">Вернуть</a>
+                                            <a href="#" class="btn btn-primary">Новый</a>
+                                            <a href="#" class="btn btn-danger">Удалить</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="tab-pane" id="tab3">
+                            <p>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th width="20%">ID</th>
+                                            <th width="20%">Размерность</th>
+                                            <th>Описание</th>
+                                            <th width="20%">Секретность</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>131</td>
+                                            <td>м/с</td>
+                                            <td>Скорость выброса</td>
+                                            <td>Да</td>
+                                        </tr>
+                                        <tr>
+                                            <td>120</td>
+                                            <td>amm</td>
+                                            <td>Давление</td>
+                                            <td>Нет</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                            <p>
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Параметры</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="form-group">
+                                            <label class="control-label" for="inputDefault">ID</label>
+                                            <input type="text" name="dict-number" class="form-control" id="inputDefault">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label" for="inputDefault">Размерность</label>
+                                            <div class="btn-group">
+                                                <a class="btn btn-primary dropdown-toggle btn-select2" data-toggle="dropdown" href="#">Выбрать  <span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">м/с</a></li>
+                                                    <li><a href="#">amm</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label" for="inputDefault">Описание</label>
+                                            <input type="text" name="dict-desc" class="form-control" id="inputDefault">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label" for="inputDefault">Секретность</label>
+                                            <div class="btn-group">
+                                                <a class="btn btn-primary dropdown-toggle btn-select2" data-toggle="dropdown" href="#">Выбрать  <span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">Да</a></li>
+                                                    <li><a href="#">Нет</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <a href="#" class="btn btn-success">Сохранить</a>
+                                            <a href="#" class="btn btn-primary">Вернуть</a>
+                                            <a href="#" class="btn btn-primary">Новый</a>
+                                            <a href="#" class="btn btn-danger">Удалить</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="clear:both"></div>
+<footer>
+    <div class="footer-content">
+        © 2015 Logo
+    </div>
+</footer>
+<script src="js/less.js" type="text/javascript"></script>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="js/bootswatch.js" type="text/javascript"></script>
+<script src="js/bootstrap.js" type="text/javascript"></script>
+<script>
+    $(function () {
+        $("#datestart").datepicker();
+        $("#dateend").datepicker();
+    });
+</script>
+<body>
+</body>
+</html>

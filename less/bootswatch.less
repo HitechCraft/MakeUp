@@ -23,17 +23,33 @@ html, body {
     margin-top: 50px;
 }
 
+.content{
+    padding-top: 15px;
+}
+
 .left-column{
     width: @left-column-width;
     float: left;
     margin-left: 40px;
+    background: @column-bg;
+    padding: 15px;
+    border: @column-border;
+    border-radius: @column-border-radius;
 }
 
 .right-column{
+    min-width: 830px;
     margin-left: @right-column-margin-left;
     margin-right: @right-column-margin-right;
+    background: @column-bg;
+    padding: 15px;
+    border: @column-border;
+    border-radius: @column-border-radius;
 }
 
+.dictionary{
+    margin-left: 40px;
+}
 
 .navbar {
   border-width: 0;
@@ -76,6 +92,7 @@ html, body {
         border-bottom: @block-border;
         text-align: @block-heading-text;
         padding: @block-heading-padding;
+        margin-bottom: 15px;
     }
 
     &-body{
@@ -102,7 +119,7 @@ html, body {
             width: @dropdown-toggle-width;
             margin: 5px 0;
 
-            .dropdown-toggle{
+            .dropdown-toggle, .dropdown-toggle-cl{
                 text-align: @dropdown-text-align;
                 width: @dropdown-toggle-width;
 
@@ -222,6 +239,9 @@ input, {
   }
 }
 
+  .info{
+    max-width: 298px;
+  }
 .has-warning {
   .help-block,
   .control-label,
@@ -412,17 +432,40 @@ a.list-group-item {
   }
 
   &-heading{
-      text-align: @panel-heading-text;
       height: @panel-line-height;
       border-bottom: @panel-heading-border;
   }
 
   &-body{
-      padding: 0;
+      .btn-group{
+
+            width: @dropdown-toggle-width;
+            margin: 5px 0;
+
+            .dropdown-toggle, .dropdown-toggle-cl{
+                text-align: @dropdown-text-align;
+                width: @dropdown-toggle-width;
+
+                .caret{
+                    float: right;
+                    margin: 9px;
+                }
+            }
+
+            .dropdown-menu{
+                width: @dropdown-menu-width;
+            }
+        }
+
+      ul.dropdown-menu{
+              margin: 0;
+          }
 
       ul{
-          margin: 0;
+          margin: -15px;
           padding: 0;
+
+          
 
           li{
                 line-height: @panel-line-height;
@@ -462,8 +505,7 @@ a.list-group-item {
 
 .tabbable{
 
-    margin-top: @tabbable-margin-top;
-    float: left;
+    margin-top: @tabbable-margin-top;   
     min-width: @tabbable-min-width;
     width: @tabbable-width;
 

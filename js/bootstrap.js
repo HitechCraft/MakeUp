@@ -2364,9 +2364,14 @@ if (typeof jQuery === 'undefined') {
 
 $(".dropdown-menu li a").click(function(){
     var selText = $(this).text();
-    var name = $(this).parents('.btn-group').find('.dropdown-toggle').find('#datestart').attr('name');
-    var name = $(this).parents('.btn-group').find('.dropdown-toggle').find('#dateend').attr('name');
-  $(this).parents('.btn-group').find('.dropdown-toggle').html('<input id="data" class="selecter" name="'+name+'" type="text" value="'+selText+'" /> <span class="caret"></span>');
+    var name = $(this).parents('.btn-group').find('.dropdown-toggle-cl').find('#datestart').attr('name');
+    var name = $(this).parents('.btn-group').find('.dropdown-toggle-cl').find('#dateend').attr('name');
+    $(this).parents('.btn-group').find('.dropdown-toggle-cl').html('<input id="data" class="selecter" name="' + name + '" type="text" value="' + selText + '" /> <span class="caret"></span>');
+});
+
+$(".dropdown-menu li a").click(function () {
+    var selText = $(this).text();
+    $(this).parents('.btn-group').find('.dropdown-toggle').html(selText + ' <span class="caret"></span>');
 });
 
 $("#btnSearch").click(function(){
