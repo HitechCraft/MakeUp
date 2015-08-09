@@ -13,12 +13,12 @@
 
 html, body {
     background: url(@body-background);
-    height: @body-height;
+    //height: @body-height;
 }
 
 .main-content {
     width: @content-width;
-    min-height: @body-height;
+    //min-height: @body-height;
     margin: 0 auto;
     margin-top: 50px;
 }
@@ -456,6 +456,18 @@ a.list-group-item {
                 width: @dropdown-menu-width;
             }
         }
+        
+        .left{
+            width: @panel-column-width;
+            float: left;
+            padding-right: @panel-column-padding;
+        }
+
+        .right{
+            width: @panel-column-width;
+            float: right;
+            padding-left: @panel-column-padding;
+        }
 
       ul.dropdown-menu{
               margin: 0;
@@ -549,6 +561,11 @@ a.list-group-item {
             border-top-right-radius: @table-bordered-border-radius;
             border-top-left-radius: @table-bordered-border-radius;
         }
+    }
+
+    &-scroll {
+        max-height: 400px !important;
+        overflow-y: scroll;
     }
 }
 
